@@ -1,11 +1,4 @@
-
-#main-menu {
-    display: block;
-    width: 100%;
-    background-color: #42213D;
-}
-
-#main-menu-content {
+#main-menu-content{
     text-align: center;
 }
 
@@ -17,11 +10,6 @@
     list-style-type: none;
 }
 
-#main-menu-content .menu-items-separator {
-    display: inline-block;
-    color: #C2C1C2;
-    margin: 0 17px;
-}
 
 #main-menu-content li a {
     color: #C2C1C2;
@@ -33,4 +21,3 @@
 #main-menu-content li:hover a {
     color: #BD4089;
 }
-
