@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/main-section.css">
     <link rel="stylesheet" href="styles/footer.css">
 	<!-- CSS only -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,73 +55,78 @@
 	        </div>
 	    </nav>
 
-	 	<div class="content-container">
-	 		<div class="row d-flex justify-content-evenly" style="padding: 50px 0 30px 50px; font-family: 'PT Sans Narrow', sans-serif;">
-		 		<div  class="col-sm-4 p-3 rounded" style="background-color: white;"> 
-		 			<p style="font-weight: bold;  font-size: 1.5em;">Select your prefers and let's find something for you </p>
-		 			<div class="row my-4">
-		 				<div class="col-sm-6">
-				 			<div class="form-check">
-			  					<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-								<label class="form-check-label" for="flexRadioDefault1">
-									Adult
-								</label>
-							</div>
+	    <div class="content-container d-flex flex-column justify-content-evenly pt-5">
 
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-								<label class="form-check-label" for="flexRadioDefault2">
-									Kid
-								</label>
-							</div>
+	    	<div class="row" style="background-color: white; margin-bottom: 50px;">
 
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-								<label class="form-check-label" for="flexRadioDefault2">
-									Universal
-								</label>
-							</div>
-						</div>
+		    	<div class="col-sm-4 p-5" style="background-color: #42213D; color: white;">
+		    		<p class="mb-2" style="font-size: 1.5em; font-weight: bold;">Write us</p>
+		    		<p>Rollers slogan</p>
+					<p class="mb-2">08157, Kyiv, Volodymyrska 29, build. 134, Business-center «Ocean Plasa».</p>
+					<p>Work time: 10:00 - 19:00</p>
+					<p style="font-size: 1.5em; font-weight: bold; overflow-wrap: anywhere;">+38(068)123-45-67</p>
+					<p style="overflow-wrap: anywhere;">Rollersslogan@gmail.com</p>
 
-						<div class="col-sm-6">
-							<label for="colorInput" class="form-label">Color picker</label>
-							<input type="color" class="form-control form-control-color" id="colorInput" value="#563d7c" title="Choose your color">
-						</div>
+		    	</div>
 
+		    	<div class="col-sm-4 p-5" style="">
+
+		    		<div class="form-floating">
+					  	<select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+					   		<option selected>Employee</option>
+					    	<option value="1">Claim</option>
+					    	<option value="2">Resume</option>
+					    	<option value="3">Delivering</option>
+					  	</select>
+					  	<label for="floatingSelect">Choose the theme</label>
 					</div>
 
-					<select class="form-select" aria-label="Default select example">
-					  	<option selected>Choose the wheel's diameter</option>
-					 	<option value="1">less then 60 mm</option>
-					  	<option value="2">61-90 mm</option>
-					  	<option value="3">100 mm and more</option>
-					</select>
 
-					<div class="my-3">
-						<label class="form-label">Choose your foot size</label>
-						<input type="text" class="form-control" name="input_text1" id="input_text1" max="46" value="36" onchange="rangeinput1.value = input_text1.value">
-						<input type="range" class="form-range" oninput="input_text1.value = rangeinput1.value" min="27" max="46" value="36" id="rangeinput1" step="0.5" onchange="input_text1.value = rangeinput1.value" >
+					<div class="form-floating my-3">
+					  	<input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
+					  	<label for="floatingInput">Name</label>
 					</div>
-					<a class="btn btn-primary btn-lg" href="index.html" role="button">Let's find you new rollers</a>
-		 		</div>
 
-		 		<div class="col-sm-4 rounded-bottom" style="background-color: white; border-top: 10px solid orange;">
-		 			<p class="text-warning bg-dark fs-3" style="text-align: center;">Care. We dont work offline during COVID</p>
-		 			<p class="fst-italic">We take a care about our customers. And we work offline to keep connected with you and be able to deliver you what ever you want</p>
-		 			<img src="img/covid.png" alt="covid_png" style="max-width: 100%;">
-		 		</div>
-		 	</div>
-	 	</div>
+					<div class="form-floating my-3">
+					  	<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+					  	<label for="floatingInput">Email address</label>
+					</div>
+
+					<div class="form-floating my-3">
+					  	<input type="phone" class="form-control" id="phone" placeholder="name@example.com">
+					  	<label for="floatingInput">Mobile phone</label>
+					</div>
+					<script type="text/javascript">
+						$("#phone").inputmask({"mask": "(999) 999-9999"});
+					</script>
+		    	</div>
+
+		    	<div class="col-sm-4 p-5">
+		    		<div class="form-floating">
+					  	<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+					  	<label for="floatingTextarea2">Text</label>
+					</div>
+					<p style="font-size: 0.8em;">By clicking on the "Submit" button, I consent to the processing of personal data and agree to <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjAidej97rwAhWplIsKHQskANsQFjAQegQIKhAD&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den-US&usg=AOvVaw3RTtfJtR2-cXACFp7Z7hmn">the privacy policy</a></p>
+					<button type="button" class="btn btn-primary">Submit</button>
+		    	</div>
+
+	    	</div>
+
+	    	
+	    </div>
 	</div>
 
+
+
 	<footer id="main-footer">
+
 		<div class="content-container" id="main-footer-content">
 			<div class="row">
 
 				<div class="col-sm-4">
 				    <div id="main-footer-info">
-				        2021. Rollers slogan<br>
-				            Rollersslogan@gmail.com
+				        2021. Rollers slogan
+				        <p style="overflow-wrap: anywhere;">Rollersslogan@gmail.com</p>
 				    </div>
 				</div>	
 				
@@ -138,13 +144,13 @@
 			    
 			    <div class="col-sm-4">
 				    <div id="used-sources">
-				        Used photos from:
-				        <a href="https://www.pinterest.ru" target="_blank">Pinterest</a>
+				        	Used photos from:
+				            <a href="https://www.pinterest.ru" target="_blank">Pinterest</a>
 				    </div>
 				</div>
 			</div>
 		</div>
 
-	</footer>
+		</footer>
 </body>
 </html>
