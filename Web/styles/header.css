@@ -10,41 +10,6 @@ header {
     background-color: #C2C1C2;
 }
 
-#title-holder {
-    float: left;
-    display: flex;
-    align-items: stretch;
-    margin: 25px 0;
-}
-
-#logo {
-    width: 150px;
-    height: 150px;
-}
-
-#title-text {
-    font-family: "Lexend Deca", sans-serif;
-    position: relative;
-    line-height: 1;
-}
-
-#title {
-    margin: 30px 5px;
-    font-size: 2.5em;
-    font-weight: bold;
-}
-
-#subtitle {
-    position: absolute;
-    bottom: 0;
-    font-size: 1.4em;
-    line-height: 1.4em;
-}
-
-
-
-
-
 
 #feedback-info-holder {
     float: right;

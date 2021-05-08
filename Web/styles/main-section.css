@@ -22,10 +22,6 @@
     padding-bottom: 100px;
 }
 
-#aside-container {
-    width: 20%;
-}
-
 #categories-list {
     list-style-type: none;
     height: auto;
@@ -61,31 +57,13 @@
     color: #BD4089;
 }
 
+/*=----------------------------------------rightblock------------------------------*/
+
 #center {
     flex: 1;
     color: #42213D;
 }
 
-#price-list-download-link {
-    font-size: 1.4em;
-    color: #42213D;
-    font-weight: bold;
-    text-align: center;
-
-    transition: all 0.15s 0s ease;
-}
-
-#price-list-download-link:hover {
-    transform: scale(1.1);
-    color: #BD4089;
-}
-
-#price-list-download-link img{
-    display: block;
-    width: 50%;
-    margin: auto;
-}
-/*.....................................*/
 #catalog-pages-holder {
     width: 100%;
     position: relative;
@@ -151,7 +129,7 @@
     width: 15px;
     margin-right: 5px;
     background-size: contain;
-    background-position: center center;
+    background-position: center;
 }
 
 .product-price {
@@ -161,8 +139,6 @@
     color: #C2C1C2;
     font-size: 1.4em;
 }
-
-
 
 #catalog-pages-nav-holder {
     height: 20px;
@@ -174,9 +150,12 @@
 #bottom-text {
     column-count: 2;
     column-gap: 60px;
+
     text-align: justify;
+
     margin-top: 60px;
     padding-top: 30px;
+
     border-top: 1px solid #42213D;
     color: #42213D;
 }

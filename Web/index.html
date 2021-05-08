@@ -21,11 +21,11 @@
 
 	        	<div class="row">
 		            <div class="col-sm">
-		            	<div id="title-holder">
-			                <img src="https://i.pinimg.com/236x/af/53/f6/af53f6d822b1537bd895008fa3cf0e37.jpg" id="logo" alt="Rollers">
-			                <div id="title-text">
-			                    <p class="m-0" id="title">Rollers slogan</p>
-			                    <p id="subtitle">Move fast.<br>Move care.</p>
+		            	<div style="float: left; display: flex; align-items: stretch; margin: 25px 0;">
+			                <img src="https://i.pinimg.com/236x/af/53/f6/af53f6d822b1537bd895008fa3cf0e37.jpg" style="width: 150px; height: 150px;" alt="Rollers">
+			                <div style=" font-family: 'Lexend Deca', sans-serif; position: relative; line-height: 1;">
+			                    <p class="m-0" style=" margin: 30px 5px; font-size: 2.5em; font-weight: bold;">Rollers slogan</p>
+			                    <p style="position: absolute; bottom: 0; font-size: 1.4em; line-height: 1.4em;">Move fast.<br>Move care.</p>
 			                </div>
 		            	</div>
 		            </div>
@@ -44,32 +44,31 @@
 		<nav style="width: 100%; background-color: #42213D;">
 	        <div class="content-container" id="main-menu-content">
 	            <ul class="ps-0 mb-0">
-	                <li class="px-4" style="border-right: 3px solid white"><a href="#">Home</a></li>
+	                <li class="px-4" style="border-right: 3px solid white"><a href="home.html">Home</a></li>
 	                <li class="px-4" style="border-right: 3px solid white"><a href="index.html">Catalog</a>
 	                <li class="px-4" style="border-right: 3px solid white"><a href="#">Payment & Shipping</a></li>
 	                <li class="px-4" style="border-right: 3px solid white"><a href="#">Price list</a></li>
-									<li class="px-4"><a href="#">Contacts</a></li>
-	                <!-- <li class="px-4"><a href="#">Contacts</a></li> -->
+	                <li class="px-4"><a href="#">Contacts</a></li>
 	            </ul>
 	        </div>
 	    </nav>
 
 	 	<div>
 	    	<div class="content-container p-0" style="height: 400px; background-color: #42213D">
-	        	<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+	        	<div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 				  	<div class="carousel-indicators">
 				    	<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 				    	<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
 				    	<button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
 				  	</div>	
 				  	<div class="carousel-inner">
-				    	<div class="carousel-item active">
+				    	<div class="carousel-item active" data-bs-interval="4000">
 				      	<img src="https://i.pinimg.com/564x/54/49/e3/5449e3e848ac2964bdc92b37512f6793.jpg" style="height: 400px;" class="d-block w-100" alt="1">
 				    	</div>
-				    <div class="carousel-item">
+				    <div class="carousel-item" data-bs-interval="4000">
 				      	<img src="https://i.pinimg.com/564x/3e/d0/b4/3ed0b4c8c355369d62725e82aef67061.jpg" style="height: 400px;" class="d-block w-100" alt="2">
 				    </div>
-				    <div class="carousel-item">
+				    <div class="carousel-item" data-bs-interval="4000">
 				    	<img src="https://i.pinimg.com/564x/33/ce/2c/33ce2c018a3e518cc21a4445b9e3e0bb.jpg" style="height: 400px;" class="d-block w-100" alt="3">
 				    </div>
 				  	</div>
@@ -93,7 +92,7 @@
 	        </div>
     	</div>
 
-    	<div id="main">
+    	<div>
         	<div class="content-container" id="main-content">
         		<div class="row">
 
@@ -144,6 +143,7 @@
 
 		                </ul>
 			        </div>
+
 			        <div class="col-sm-9">
 			            <div id="center">
 			                <div id="catalog-pages-holder">
@@ -259,7 +259,7 @@
 				<div class="col-sm-4">
 				    <div id="main-footer-menu">
 				            <ul>
-				                <li><a href="#">Home</a></li>
+				                <li><a href="home.html">Home</a></li>
 				                <li><a href="index.html">Catalog</a></li>
 				                <li><a href="#">Payment & Shipping</a></li>
 				                <li><a href="price-list.html">Price list</a></li>
