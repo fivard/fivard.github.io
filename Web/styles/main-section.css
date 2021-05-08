@@ -1,7 +1,3 @@
-#path {
-    display: block;
-}
-
 #path-content {
     height: 40px;
     line-height: 40px;
@@ -17,9 +13,10 @@
     color: #BD4089;
 }
 
+/*---------------------------main-section----------------------------*/
+
 #main-content {
     display: flex;
-    align-items: stretch;
     padding-top: 15px;
     background-color: #C2C1C2;
     padding-bottom: 100px;

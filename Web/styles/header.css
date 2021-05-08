@@ -3,15 +3,11 @@
 /*'PT Sans Narrow'*/
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 
-#main-header {
+header {
     display: block;
     width: 100%;
     min-height: 200px;
     background-color: #C2C1C2;
-}
-
-#main-header-content {
-    color: #42213D;
 }
 
 #title-holder {
@@ -29,21 +25,26 @@
 #title-text {
     font-family: "Lexend Deca", sans-serif;
     position: relative;
+    line-height: 1;
 }
 
 #title {
     margin: 30px 5px;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
 #subtitle {
-    margin: 20px 5px;
     position: absolute;
     bottom: 0;
     font-size: 1.4em;
     line-height: 1.4em;
 }
+
+
+
+
+
 
 #feedback-info-holder {
     float: right;
