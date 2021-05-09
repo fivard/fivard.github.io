@@ -25,10 +25,12 @@ header {
 #feedback-form-link {
     margin-top: 15px;
     font-size: 1.5em;
+    color: #42213D;
     border-bottom: 2px dashed #42213D;
     float: right;
     transition: all 0.15s 0s ease-in-out;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #feedback-form-link:hover {
