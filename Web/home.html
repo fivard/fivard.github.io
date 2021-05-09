@@ -35,7 +35,7 @@
 		            	<div id="feedback-info-holder">
 			                <p class="contact-item">+380 (12) 345 67 89</p>
 			                <p class="contact-item">+380 (98) 765 43 21</p>
-			                <p class="m-0" id="feedback-form-link">Feedback</p>
+			                <a href="#popup" class="m-0 popup_link" id="feedback-form-link">Feedback</a></p>
 		            	</div>
 		        	</div>
 		        </div>
@@ -53,92 +53,139 @@
 	            </ul>
 	        </div>
 	    </nav>
+	    <div>
+		 	<div class="content-container">
+		 		<div class="row d-flex justify-content-evenly" style="padding: 50px 0 30px 50px; font-family: 'PT Sans Narrow', sans-serif;">
+			 		<div  class="col-sm-4 p-3 rounded" style="background-color: white;"> 
+			 			<p style="font-weight: bold;  font-size: 1.5em;">Select your prefers and let's find something for you </p>
+			 			<div class="row my-4">
+			 				<div class="col-sm-6">
+					 			<div class="form-check">
+				  					<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+									<label class="form-check-label" for="flexRadioDefault1">
+										Adult
+									</label>
+								</div>
 
-	 	<div class="content-container">
-	 		<div class="row d-flex justify-content-evenly" style="padding: 50px 0 30px 50px; font-family: 'PT Sans Narrow', sans-serif;">
-		 		<div  class="col-sm-4 p-3 rounded" style="background-color: white;"> 
-		 			<p style="font-weight: bold;  font-size: 1.5em;">Select your prefers and let's find something for you </p>
-		 			<div class="row my-4">
-		 				<div class="col-sm-6">
-				 			<div class="form-check">
-			  					<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-								<label class="form-check-label" for="flexRadioDefault1">
-									Adult
-								</label>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+									<label class="form-check-label" for="flexRadioDefault2">
+										Kid
+									</label>
+								</div>
+
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+									<label class="form-check-label" for="flexRadioDefault2">
+										Universal
+									</label>
+								</div>
 							</div>
 
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-								<label class="form-check-label" for="flexRadioDefault2">
-									Kid
-								</label>
+							<div class="col-sm-6">
+								<label for="colorInput" class="form-label">Color picker</label>
+								<input type="color" class="form-control form-control-color" id="colorInput" value="#563d7c" title="Choose your color">
 							</div>
 
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-								<label class="form-check-label" for="flexRadioDefault2">
-									Universal
-								</label>
-							</div>
 						</div>
 
-						<div class="col-sm-6">
-							<label for="colorInput" class="form-label">Color picker</label>
-							<input type="color" class="form-control form-control-color" id="colorInput" value="#563d7c" title="Choose your color">
+						<select class="form-select" aria-label="Default select example">
+						  	<option selected>Choose the wheel's diameter</option>
+						 	<option value="1">less then 60 mm</option>
+						  	<option value="2">61-90 mm</option>
+						  	<option value="3">100 mm and more</option>
+						</select>
+
+						<div class="my-3">
+							<label class="form-label">Choose your foot size</label>
+							<input type="text" class="form-control" name="input_text1" id="input_text1" max="46" value="36" onchange="rangeinput1.value = input_text1.value">
+							<input type="range" class="form-range" oninput="input_text1.value = rangeinput1.value" min="27" max="46" value="36" id="rangeinput1" step="0.5" onchange="input_text1.value = rangeinput1.value" >
 						</div>
+						<a class="btn btn-primary btn-lg" href="index.html" role="button">Let's find you new rollers</a>
+			 		</div>
 
-					</div>
-
-					<select class="form-select" aria-label="Default select example">
-					  	<option selected>Choose the wheel's diameter</option>
-					 	<option value="1">less then 60 mm</option>
-					  	<option value="2">61-90 mm</option>
-					  	<option value="3">100 mm and more</option>
-					</select>
-
-					<div class="my-3">
-						<label class="form-label">Choose your foot size</label>
-						<input type="text" class="form-control" name="input_text1" id="input_text1" max="46" value="36" onchange="rangeinput1.value = input_text1.value">
-						<input type="range" class="form-range" oninput="input_text1.value = rangeinput1.value" min="27" max="46" value="36" id="rangeinput1" step="0.5" onchange="input_text1.value = rangeinput1.value" >
-					</div>
-					<a class="btn btn-primary btn-lg" href="index.html" role="button">Let's find you new rollers</a>
-		 		</div>
-
-		 		<div class="col-sm-4 rounded-bottom" style="background-color: white; border-top: 10px solid orange;">
-		 			<p class="text-warning bg-dark fs-3" style="text-align: center;">Care. We dont work offline during COVID</p>
-		 			<p class="fst-italic">We take a care about our customers. And we work offline to keep connected with you and be able to deliver you what ever you want</p>
-		 			<img src="img/covid.png" alt="covid_png" style="max-width: 100%;">
-		 		</div>
+			 		<div class="col-sm-4 rounded-bottom" style="background-color: white; border-top: 10px solid orange;">
+			 			<p class="text-warning bg-dark fs-3" style="text-align: center;">Care. We dont work offline during COVID</p>
+			 			<p class="fst-italic">We take a care about our customers. And we work offline to keep connected with you and be able to deliver you what ever you want</p>
+			 			<img src="img/covid.png" alt="covid_png" style="max-width: 100%;">
+			 		</div>
+			 	</div>
 		 	</div>
-	 	</div>
-
+		 </div>
 	</div>
 
 	<footer id="footer">
-		<div class="content-container">
-			<div class="row">
+			<div class="content-container">
+				<div class="row">
 
-				<div class="col-sm-4">
-			        2021. Rollers slogan<br>
-			        <p style="overflow-wrap: anywhere;">   Rollersslogan@gmail.com</p>
-				</div>	
-				
-				<div class="col-sm-4">
-		            <ul>
-		                <li><a href="home.html">Home</a></li>
-		                <li><a href="index.html">Catalog</a></li>
-		                <li><a href="#">Payment & Shipping</a></li>
-		                <li><a href="#">Price list</a></li>
-		                <li><a href="contacts.html">Contacts</a></li>
-		            </ul>
+					<div class="col-sm-4">
+				        2021. Rollers slogan<br>
+				        <p style="overflow-wrap: anywhere;">   Rollersslogan@gmail.com</p>
+					</div>	
+					
+					<div class="col-sm-4">
+			            <ul>
+			                <li><a href="home.html">Home</a></li>
+			                <li><a href="index.html">Catalog</a></li>
+			                <li><a href="#">Payment & Shipping</a></li>
+			                <li><a href="#">Price list</a></li>
+			                <li><a href="contacts.html">Contacts</a></li>
+			            </ul>
+					</div>
+				    
+				    <div class="col-sm-4">
+			        	Used photos from:
+			            <a href="https://www.pinterest.ru" target="_blank">Pinterest</a>
+					</div>
 				</div>
-			    
-			    <div class="col-sm-4">
-		        	Used photos from:
-		            <a href="https://www.pinterest.ru" target="_blank">Pinterest</a>
+			</div>
+		</footer>
+
+		<div class="popup" id="popup">
+			<div class="popup_body">
+				<div class="popup_content">
+					<div class="popup_close">
+						<a href="#"  style="text-decoration: none;">
+							<span>&#10006;</span>
+						</a>
+					</div>
+
+					<div class="popup_title">Connect with us</div>
+
+					<form class="needs-validation" novalidate>
+
+					    <label for="validationCustom01" class="form-label">Name</label>
+					    <input type="text" class="form-control" id="popup-name" required>
+						<div class="invalid-feedback">
+						   Please enter your name
+						</div>
+
+					    <label for="validationCustom02" class="form-label">Mobile Phone</label>
+					    <input type="text" class="form-control" id="popup-phone" required>
+					    <div class="invalid-feedback">
+					      	Please enter your mobile phone
+					    </div>
+
+					    <label for="validationCustomUsername" class="form-label">Email</label>
+					    <input type="email" class="form-control" id="popup-email" aria-describedby="inputGroupPrepend" required>
+					    <div class="invalid-feedback">
+					        Please enter a valid email.
+					    </div>
+
+					    <label for="validationCustom03" class="form-label">Message</label>
+					    <input type="text" class="form-control" id="popup-message" style="height: 200px;" required>
+					    <div class="invalid-feedback">
+					    	Please enter something.
+					    </div>
+
+					    <button class="mt-2 btn btn-primary" type="submit">Submit form</button>
+					</form>
+
 				</div>
 			</div>
 		</div>
-	</footer>
+
+		<script type="text/javascript" src="scripts/popup.js"></script>
+		<script type="text/javascript" src="scripts/validation.js"></script>
 </body>
 </html>

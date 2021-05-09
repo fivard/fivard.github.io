@@ -283,13 +283,42 @@
 						</a>
 					</div>
 
-					<div class="popup_title">ОНЛАЙН-СЕРВИС ПРОВЕРКИ ТЕКСТА НА УНИКАЛЬНОСТЬ</div>
+					<div class="popup_title">Connect with us</div>
 
-					<div class="popup_trxt">Сервис онлайн проверки текста на уникальность Text.ru покажет процент уникальности текста. Глубокая и качественная проверка найдет дубликаты и рерайт.</div>
+					<form class="needs-validation" novalidate>
+
+					    <label for="validationCustom01" class="form-label">Name</label>
+					    <input type="text" class="form-control" id="popup-name" required>
+						<div class="invalid-feedback">
+						   Please enter your name
+						</div>
+
+					    <label for="validationCustom02" class="form-label">Mobile Phone</label>
+					    <input type="text" class="form-control" id="popup-phone" required>
+					    <div class="invalid-feedback">
+					      	Please enter your mobile phone
+					    </div>
+
+					    <label for="validationCustomUsername" class="form-label">Email</label>
+					    <input type="email" class="form-control" id="popup-email" aria-describedby="inputGroupPrepend" required>
+					    <div class="invalid-feedback">
+					        Please enter a valid email.
+					    </div>
+
+					    <label for="validationCustom03" class="form-label">Message</label>
+					    <input type="text" class="form-control" id="popup-message" style="height: 200px;" required>
+					    <div class="invalid-feedback">
+					    	Please enter something.
+					    </div>
+
+					    <button class="mt-2 btn btn-primary" type="submit">Submit form</button>
+					</form>
 
 				</div>
 			</div>
 		</div>
+
 		<script type="text/javascript" src="scripts/popup.js"></script>
+		<script type="text/javascript" src="scripts/validation.js"></script>
 	</body>
 </html>
