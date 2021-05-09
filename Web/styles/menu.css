@@ -1,8 +1,8 @@
-#main-menu-content{
+#menu{
     text-align: center;
 }
 
-#main-menu-content li {
+#menu li {
     display: inline-block;
     position: relative;
     box-sizing: content-box;
@@ -11,13 +11,13 @@
 }
 
 
-#main-menu-content li a {
+#menu li a {
     color: #C2C1C2;
     font-size: 1.4em;
     text-decoration: none;
     transition: color 0.12s 0s ease-in;
 }
 
-#main-menu-content li:hover a {
+#menu li:hover a {
     color: #BD4089;
 }

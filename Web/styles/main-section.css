@@ -1,21 +1,21 @@
-#path-content {
+#path {
     height: 40px;
     line-height: 40px;
     background-color: #C2C1C2;
 }
 
-#path-content a {
+#path a {
     color: #42213D;
     text-decoration: none;
 }
 
-#path-content a:hover {
+#path a:hover {
     color: #BD4089;
 }
 
 /*---------------------------main-section----------------------------*/
 
-#main-content {
+#main {
     display: flex;
     padding-top: 15px;
     background-color: #C2C1C2;
@@ -57,6 +57,20 @@
     color: #BD4089;
 }
 
+.label_price{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #42213D;
+}
+
+.label_price:hover{
+    transform: scale(1.03);
+    color: #BD4089;
+
+    transition: all 0.1s 0s ease-in-out;
+}
+
 /*=----------------------------------------rightblock------------------------------*/
 
 #center {
@@ -64,7 +78,7 @@
     color: #42213D;
 }
 
-.catalog-page {
+.catalog {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -74,10 +88,11 @@
 
 .product-card {
     position: relative;
-    width: 210px;
+    max-width: 210px;
     height: 350px;
+
     margin: 12px;
-    padding: 15px 0 ;
+    padding: 15px 0;
     background-color: #42213D;
     transition: all 0.2s 0s ease-in-out;
 }
@@ -119,14 +134,6 @@
     align-items: center;
 }
 
-.detail-icon{
-    height: 15px;
-    width: 15px;
-    margin-right: 5px;
-    background-size: contain;
-    background-position: center;
-}
-
 .product-price {
     position: absolute;
     bottom: 10px;
@@ -135,7 +142,7 @@
     font-size: 1.4em;
 }
 
-#catalog-pages-nav-holder {
+#catalog-pages-nav {
     height: 20px;
     display: block;
     text-align: center;
