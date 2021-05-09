@@ -1,25 +1,25 @@
-#main-footer {
+#footer {
     display: block;
     width: 100%;
     background-color: #42213D;
-}
-
-#main-footer-content {
+    text-align: center;	
     color: #C2C1C2;
+    vertical-align: baseline;
 }
 
-#main-footer-content > div{
+
+#footer > div{
     padding: 20px 0;
 }
 
-#main-footer-content a{
+#footer a{
     color: #C2C1C2;
 }
 
-#main-footer-content a:hover{
+#footer a:hover{
     color: #BD4089;
 }
 
-#main-footer-content ul{
+#footer ul{
     list-style-type: none;
 }

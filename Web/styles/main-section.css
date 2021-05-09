@@ -64,24 +64,19 @@
     color: #42213D;
 }
 
-#catalog-pages-holder {
-    width: 100%;
-    position: relative;
-}
-
 .catalog-page {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 .product-card {
     position: relative;
-    width: 250px;
+    width: 210px;
     height: 350px;
-    margin-bottom: 15px;
+    margin: 12px;
     padding: 15px 0 ;
     background-color: #42213D;
     transition: all 0.2s 0s ease-in-out;
